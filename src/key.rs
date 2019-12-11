@@ -198,7 +198,6 @@ impl SecretKey {
         }
     }
 
-    // todo[dvdplm] can we move this to its own file to make it easier to maintain?
     #[inline]
     /// Inverts (1 / self) this secret key.
     pub fn inv_assign(&mut self) -> Result<(), Error> {

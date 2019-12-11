@@ -284,11 +284,11 @@ extern "C" {
         data: *mut c_void,
     ) -> c_int;
 
-    // todo[dvdplm] add a cfg_attr here too?
+    #[cfg_attr(not(feature = "external-symbols"), link_name = "rustsecp256k1_v0_1_0_ec_privkey_inverse")]
     pub fn secp256k1_ec_privkey_inverse(cx: *const Context,
-                                               out: *mut c_uchar,
-                                               scalar: *const c_uchar)
-                                               -> c_int;
+                                        out: *mut c_uchar,
+                                        scalar: *const c_uchar)
+                                        -> c_int;
 }
 
 
