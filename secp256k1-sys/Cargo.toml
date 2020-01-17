@@ -19,7 +19,8 @@ links = "rustsecp256k1_v0_1_1"
 features = [ "recovery", "endomorphism", "lowmemory" ]
 
 [build-dependencies]
-cc = ">= 1.0.28, <= 1.0.41"
+# todo[dvdplm] figure out why the requirment here is so stringent; had compilation issies in `eth` where v.46 was picked.
+cc = ">= 1.0.28, <= 1.0.46"
 
 [lib]
 name = "secp256k1_sys"
