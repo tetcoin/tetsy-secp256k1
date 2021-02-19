@@ -1,5 +1,5 @@
 /** @file ext.c
- * Ethereum extensions to libecp256k1
+ * Vapory extensions to libecp256k1
  * @authors:
  *   Arkadiy Paronyan <arkady@ethdev.com>
  * @date 2015

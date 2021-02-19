@@ -8,7 +8,7 @@ stages:
 
 
 
-image:                             parity/rust-builder:latest
+image:                             tetcoin/rust-builder:latest
 
 variables:
   GIT_STRATEGY:                    fetch
